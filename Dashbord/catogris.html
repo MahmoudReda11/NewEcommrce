@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahmoud Reda</title>
+
+        <!-- link file fontAwesome -->
+        
+        <link rel="stylesheet" href="fontAwesome/css/all.css"/>
+
+        <!-- link File Swiper css -->
+        <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css">
+
+        <!-- Link File CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+
+        <div class="notfcation">
+            <span><i onclick="showSecTogle('.drobdwon')" id="bell-btn" class="fa-solid fa-bell"></i></span>
+            <ul class="drobdwon">
+                <li>تم الالغاء <span>3</span></li>
+                <li>تم الارجاع <span>2</span></li>
+            </ul>
+        </div>
+
+        <div class="side-bar">
+            <a href="#" class="logo"><span>X</span>Premo</a>
+           
+                <ul class="side-links">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>لوحة التحكم</a></li>
+                    <li class="active"><a href="elaksam.html"><i class="fa-solid fa-shop"></i>واجهة المتجر</a></li>
+                    <li><a href="#"><i class="fa-solid fa-sack-dollar"></i>المبيعات</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>العملاء</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chart-column"></i>التقارير</a></li>
+                </ul>
+           
+        </div>
+
+        <!-- لوحة التحكم -->
+
+
+        <div class="contanier">
+            <div class="top-sec">
+                <h4> المنتجات</h4>
+                <div class="btn-add">
+                    <span onclick="showSec('.add-kesm')" class="btn">اضافة منتج    <i class="fa-solid fa-plus"></i></span>
+                </div>
+            </div>
+
+
+            <table class="catogrie">
+                <thead>
+                 <tr>
+           
+                     <td class="checkboxtable"><input type="checkbox"></td>
+                     <td>#</td>
+                     <td>الصورة</td>
+                     <td>اسم المنتج</td>
+                     <td>السعر</td>
+                     <td>القسم</td>
+                     <td>الكمية</td>
+                     <td>تحرير</td>
+                   </tr>
+                </thead>
+                 <tbody>
+
+                       <tr>
+                         <td class="checkboxtable"><input type="checkbox"></td>
+                         <td>3</td>
+                         <td><img src="images/3.jpg" alt=""></td>
+                         <td>كاتيل غلاي مياه سخنة 400 لتر</td>
+                         <td>300 حنيه</td>
+                         <td>العاب الأطفال</td>
+                         <td>3</td>
+                         <td><i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-copy fa-icon"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td class="checkboxtable"><input type="checkbox"></td>
+                            <td>3</td>
+                            <td><img src="images/3.jpg" alt=""></td>
+                            <td>كاتيل غلاي مياه سخنة 400 لتر</td>
+                            <td>300 حنيه</td>
+                            <td>العاب الأطفال</td>
+                            <td>3</td>
+                            <td><i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-copy fa-icon"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td class="checkboxtable"><input type="checkbox"></td>
+                            <td>3</td>
+                            <td><img src="images/3.jpg" alt=""></td>
+                            <td>كاتيل غلاي مياه سخنة 400 لتر</td>
+                            <td>300 حنيه</td>
+                            <td>العاب الأطفال</td>
+                            <td>3</td>
+                            <td><i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-copy fa-icon"></i></td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="checkboxtable"><input type="checkbox"></td>
+                            <td>3</td>
+                            <td><img src="images/3.jpg" alt=""></td>
+                            <td>كاتيل غلاي مياه سخنة 400 لتر</td>
+                            <td>300 حنيه</td>
+                            <td>العاب الأطفال</td>
+                            <td>3</td>
+                            <td><i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-copy fa-icon"></i></td>
+                        </tr>
+
+                
+
+                       
+
+                 
+                 </tbody>
+               </table>
+
+           
+
+
+        </div>
+
+
+        <div class="add-kesm add-catogris active">
+
+            <i onclick="closeSec('.add-kesm')" class="fa-solid fa-circle-xmark"></i>
+            
+            <div class="top-sec">
+                <h4>اضافة منتج</h4>
+            </div>
+    
+            <div class="cont-add">
+                
+            <div class="container2">
+                <div class="box">
+                    <input type="file" id="file" accept="image/*" hidden>
+                <div class="img-area" data-img="">
+                    <i class='bx bxs-cloud-upload icon'></i>
+                   
+                    <p>اقصي ملف تحميل <span>5MB</span></p>
+                </div>
+                <button class="select-image">اختر الصورة الاساسية</button>
+                </div>
+
+
+                <div class="box">
+                    <input type="file" id="file2" accept="image/*" hidden>
+                <div class="img-area img-area2" data-img="">
+                    <i class='bx bxs-cloud-upload icon'></i>
+                   
+                    <p>اقصي ملف تحميل <span>5MB</span></p>
+                </div>
+                <button class="select-image select-image2">اختر الصور المصغرة </button>
+                </div>
+            </div>
+
+
+            
+
+            <div class="inp-add">
+                <div class="all-input">
+                    <div class="inp">
+                        <label for=""> <i class="fa-solid fa-pen-to-square fa-icon"></i> اسم المنتج</label>
+    
+                        <input type="text" name="" id="" placeholder="ادخل اسم المنتج">
+                    </div>
+
+                    <div class="inp">
+                        <label for=""> <i class="fa-solid fa-file-pen fa-icon"></i>  وصف المنتج</label>
+    
+                        <textarea name="" id="" rows="6" placeholder="وصف المنتج"></textarea>
+                    </div>
+
+                    <div class="inp">
+                        <label for=""><i class="fa-solid fa-magnifying-glass fa-icon"></i>    كلمات مفتاحية SEO</label>
+    
+                        <textarea name="" id="" rows="6" placeholder="  كلمات مفتاحية"></textarea>
+                    </div>
+
+                    <div class="inp">
+                        <label for=""><i class="fa-solid fa-dollar-sign fa-icon"></i> السعر من غير خصم</label>
+    
+                        <input type="text" name="" id="" placeholder="سعر المنتج ">
+                    </div>
+
+                    <div class="inp">
+                        <label for=""> <i class="fa-solid fa-hand-holding-dollar fa-icon"></i> السعر بعد الخصم</label>
+    
+                        <input type="text" name="" id="" placeholder="سعر المنتج ">
+                    </div>
+
+                    <div class="inp">
+                        <label for=""><i class="fa-solid fa-school-flag fa-icon"></i>   الشركة</label>
+    
+                        <input type="text" name="" id="" placeholder=" ادخل اسم الشركة الخاصة بالمنتج ">
+                    </div>
+
+                    <div class="inp">
+                        <label for=""><i class="fa-regular fa-rectangle-list fa-icon"></i>   القسم</label>
+    
+                        <input type="text" name="" id="" placeholder=" ادخل القسم الخاص بالمنتج    ">
+                    </div>
+
+                    <div class="inp">
+                        <label for=""><i class="fa-solid fa-list-ol fa-icon"></i>   الكمية المتاحة</label>
+    
+                        <input type="text" name="" id="" placeholder="   ادخل عدد القطع المتاحة من المنتج     ">
+                    </div>
+
+                    <div class="inp">
+                        <label for=""> <i class="fa-solid fa-palette fa-icon"></i> اضافة الالوان</label>
+    
+                        <textarea name="" id="" cols="30" rows="6" placeholder="ادخل  اللون"></textarea>
+                    </div>
+
+
+
+                    <div class="inp">
+                        <label for=""> <i class="fa-solid fa-maximize fa-icon"></i> مقاسات المنتج</label>
+    
+                        <textarea name="" id="" cols="30" rows="6" placeholder="ادخل المقاس "></textarea>
+                    </div>
+
+
+                    <div class="inp">
+                        <label for=""> <i class="fa-regular fa-object-group fa-icon"></i>   اضافة منتجات ذات صلة</label>
+    
+                        <textarea name="" id="" cols="30" rows="6" placeholder="ادخل اسم المنتج"></textarea>
+                    </div>
+
+              
+
+
+                    <button class="btn">اضافة المنتج</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+
+      <script src="js/main.js"></script>
+    </body>
+    </html>

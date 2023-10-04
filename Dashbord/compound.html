@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahmoud Reda</title>
+
+        <!-- link file fontAwesome -->
+        
+        <link rel="stylesheet" href="fontAwesome/css/all.css"/>
+
+        <!-- link File Swiper css -->
+        <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css">
+
+        <!-- Link File CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+
+        <div class="notfcation">
+            <span><i onclick="showSecTogle('.drobdwon')" id="bell-btn" class="fa-solid fa-bell"></i></span>
+            <ul class="drobdwon">
+                <li>تم الالغاء <span>3</span></li>
+                <li>تم الارجاع <span>2</span></li>
+            </ul>
+        </div>
+
+        <div class="side-bar">
+            <a href="#" class="logo"><span>X</span>Premo</a>
+           
+                <ul class="side-links">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>لوحة التحكم</a></li>
+                    <li class="active"><a href="elaksam.html"><i class="fa-solid fa-shop"></i>واجهة المتجر</a></li>
+                    <li><a href="#"><i class="fa-solid fa-sack-dollar"></i>المبيعات</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>العملاء</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chart-column"></i>التقارير</a></li>
+                </ul>
+           
+        </div>
+
+        <!-- لوحة التحكم -->
+        <div class="contanier">
+            <div class="top-sec">
+                <h4> الشركات</h4>
+                <div class="btn-add">
+                    <span onclick="showSec('.add-kesm')" class="btn">اضافة شركة    <i class="fa-solid fa-plus"></i></span>
+                </div>
+            </div>
+
+
+            <table>
+                <thead>
+                 <tr>
+           
+                     <td class="checkboxtable"><input type="checkbox"></td>
+                     <td>اسم الشركة</td>
+                     <td>تحرير</td>
+                   </tr>
+                </thead>
+                 <tbody>
+
+                       <tr>
+                         <td class="checkboxtable"><input type="checkbox"></td>
+                         <td>العاب الأطفال</td>
+                         <td><i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td class="checkboxtable"><input type="checkbox"></td>
+                            <td> الأجهزة الكهربائية</td>
+                            <td><i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i></td>
+                           </tr>
+
+
+                           <tr>
+                            <td class="checkboxtable"><input type="checkbox"></td>
+                            <td> الأجهزة الكهربائية  >  خلاطات</td>
+                            <td><i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i></td>
+                           </tr>
+
+
+                           <tr>
+                            <td class="checkboxtable"><input type="checkbox"></td>
+                            <td> الأجهزة الكهربائية  >  دفايات</td>
+                            <td><i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i></td>
+                           </tr>
+
+
+                           <tr>
+                            <td class="checkboxtable"><input type="checkbox"></td>
+                            <td>الاجهزة الرياضية</td>
+                            <td><i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i></td>
+                           </tr>
+
+                 
+                 </tbody>
+               </table>
+
+           
+
+
+        </div>
+
+
+        <div class="add-kesm">
+
+            <i onclick="closeSec('.add-kesm')" class="fa-solid fa-circle-xmark"></i>
+            
+            <div class="top-sec">
+                <h4>اضافة شركة</h4>
+            </div>
+    
+            <div class="cont-add">
+                
+            <div class="container2">
+                <input type="file" id="file" accept="image/*" hidden>
+                <div class="img-area" data-img="">
+                    <i class='bx bxs-cloud-upload icon'></i>
+                   
+                    <p>اقصي ملف تحميل <span>5MB</span></p>
+                </div>
+                <button class="select-image">اختر الصورة</button>
+            </div>
+
+            <div class="inp-add">
+                <div class="all-input">
+                    <div class="inp">
+                        <label for="">اسم الشركة</label>
+    
+                        <input type="text" name="" id="" placeholder="رقم الطلب">
+                    </div>
+
+                    <div class="inp">
+                        <label for="">  وصف الشركة</label>
+    
+                        <input type="text" name="" id="" placeholder="رقم الطلب">
+                    </div>
+
+                    <button class="btn">اضافة الشركة</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+
+      <script src="js/main.js"></script>
+    </body>
+    </html>
